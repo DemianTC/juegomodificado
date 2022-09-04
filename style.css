@@ -1,0 +1,114 @@
+body{
+    background: url(imagenes/fondo.jpg) no-repeat center;
+    font-family: "montserrat", Arial, Helvetica, sans-serif;
+    
+}
+
+header{
+    background: black;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 5px;
+   
+}
+
+h1{
+    
+    text-align: center;
+    margin: 0;
+    color: white
+}
+
+main{
+    width: 750px;
+    margin: auto;
+    padding: 15px;
+    background: rgba(255,255,255, .7);
+    display: flex;
+    gap: 15px;
+    text-align: center;
+}
+
+
+
+#palabra_a_adivinar{
+    height: 3em;
+}
+#palabra_a_adivinar span{
+    vertical-align: bottom;
+    font-size: 1em;
+    border-bottom: 2px solid black;
+    width: 50px;
+    text-align: center;
+    margin-right: 6px;
+    display: inline-block; /*sin esto no hay ancho*/
+}
+
+#imagen{
+    width: 20%;
+    margin: 1px;
+    padding: 1px;
+}
+
+
+
+#letras{
+    width: 100%;
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+#letras button{
+
+  padding: .6rem 1rem;
+  border: 1px solid #995309;
+  border-radius: 4px;
+  background-color: #d9750b;
+  color: #fff;
+
+  font-size: 1.5rem;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+  box-shadow: 0 1px 0 rgba(255,255,255,.5) inset,
+    0 1px 3px rgba(0,0,0,.2);
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(10%,#f90),to(#e76a00));
+  background-image: linear-gradient(#f90 10%,#e76a00 100%);
+   width: 20px;
+    text-align: auto;
+    cursor: pointer;
+ }
+
+ #jugar{
+    width: 150px;
+    height: 45px;
+    background: #0a3871;
+    color: white;
+    border-radius: 24px;
+    cursor: pointer;
+     
+ }
+
+
+
+#resultado{
+    color: #38043a;
+    background: yellow;
+    font-size: 30px;
+}
+
+
+ @media only screen and (min-width:480px) and (max-width:750px){
+
+ 
+
+    #letras button{
+        width: 10%;
+
+    }
+
+    #main{
+        width: auto;
+    }
+
+   }
